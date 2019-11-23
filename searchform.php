@@ -1,6 +1,6 @@
 <?php
 /**
- * default search form
+ * search form
  */
 ?>
     <div class="mb-5">
