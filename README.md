@@ -26,7 +26,3 @@ Versión inicial
 * Liberada: Nov 25, 2019
 
 https://github.com/tooomas821/Notos/blob/master/changelog.md
-
-== Recursos ==
-* normalize.css, © 2012-2018 Nicolas Gallagher and Jonathan Neal, MIT
-* Underscores, © 2012-2018 Automattic, Inc., GNU GPL v2 or later
