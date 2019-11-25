@@ -10,15 +10,15 @@ Probado hasta: WordPress 5.3
 
 Requiere PHP: 7.2.0
 
-Licencia: GPLv2 o posterior
+Licencia: MIT License
 
-Licencia URI: http://www.gnu.org/licenses/gpl-2.0.html
+Licencia URI: https://opensource.org/licenses/MIT
 
-== Description ==
+== Descripcion ==
 
 Tamplate para diario online.
 
-== Changelog ==
+== Cambios ==
 
 
 Versión inicial
