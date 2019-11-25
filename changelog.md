@@ -6,18 +6,13 @@ y este proyecto se adhiere a [Semantic Versioning] (http://semver.org/).
 
 ## [No publicado]
 ### Adicional
-- Banner de marketing para solicitar a los usuarios que actualicen a una cuenta gratuita
+- Realizando cambios en el sistema de noticias
 
 ### Cambio
 
-## 2017-03-06
+## 2019-11-23
 ### Adicional
-- Nuevo formulario de registro simplificado para usuarios gratuitos @evanagee
-- Nueva respuesta de banda para cargos exitosos
-- Actualizar el registro de membresía de Salesforce cuando se recibe el primer pago
-- Capacidad para que los usuarios editen su membresía
-- Meta títulos / descripciones en toda la aplicación
+- Nuevo formulario de busqueda inclusivo
 
 ### Cambio
-- Flujo de registro actualizado
-- Se eliminó la restricción de longitud del título de las tarjetas de recursos
+- Se cambio el formulario por uno mas adecuado a lectores de pantalla
