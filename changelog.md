@@ -11,8 +11,10 @@ y este proyecto se adhiere a [Semantic Versioning] (http://semver.org/).
 ### Cambio
 
 ## 2019-11-23
-### Adicional
+
+### Cambio Realizado
+- Se cambio el formulario por uno mas adecuado a lectores de pantalla
+
+### Info Adicional
 - Nuevo formulario de busqueda inclusivo
 
-### Cambio
-- Se cambio el formulario por uno mas adecuado a lectores de pantalla
