@@ -21,7 +21,6 @@ Tamplate para diario online.
 == Changelog ==
 
 
-
 Versión inicial
 = v1.1.0 =
 * Liberada: Nov 25, 2019
