@@ -10,9 +10,9 @@ Probado hasta: WordPress 5.3
 
 Requiere PHP: 7.2.0
 
-Licencia: GPL-3.0
+Licencia: MIT
 
-Licencia URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Licencia URI: https://opensource.org/licenses/MIT
 
 == Descripcion ==
 
