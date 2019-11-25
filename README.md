@@ -1,4 +1,5 @@
 === Notos ===
+#
 Contribuyentes: Darknadie
 Tags: noticias, blog, barra lateral derecha, encabezado personalizado, colores personalizados, logotipo personalizado, widgets, menú personalizado, imágenes destacadas, estilo editor, microformatos, publicación fija, cabecera flexible
 Requiere al menos: v1.1.0
