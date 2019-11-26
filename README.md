@@ -4,7 +4,7 @@ Contribuyentes: Darknadie
 #
 Tags: noticias, blog, barra lateral derecha, encabezado personalizado, colores personalizados, logotipo personalizado, widgets, menú personalizado, imágenes destacadas, estilo editor, microformatos, publicación fija, cabecera flexible
 
-Requiere al menos: v1.1.0
+Requiere al menos: v1.0.0
 
 Probado hasta: WordPress 5.3
 
@@ -22,7 +22,7 @@ Tamplate para diario online.
 
 
 Versión inicial
-= v1.1.0 =
+= v1.0.1 =
 * Liberada: Nov 25, 2019
 
 https://github.com/tooomas821/Notos/blob/master/changelog.md
