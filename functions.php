@@ -9,6 +9,7 @@ require_once( get_template_directory() . '/funciones/gtmb.php' );// gutemberg
 require_once( get_template_directory() . '/funciones/personalizacion.php' );// personalizacion del sitio
 require_once( get_template_directory() . '/funciones/migasdepan.php' );// breadcrumbs
 require_once( get_template_directory() . '/funciones/logo-login.php' );// el logo del wp-admin
+require_once( get_template_directory() . '/funciones/updater.php' );// Actualizador
 require_once( get_template_directory() . '/funciones/paginacion.php' );
 require_once( get_template_directory() . '/funciones/extracto.php' );
 require_once( get_template_directory() . '/funciones/walker.php' );
