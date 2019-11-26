@@ -6,6 +6,8 @@ Description: Tamplate para diario online
 Author: UNISEX
 Version: v1.1.0
 License: General Public License versión 2.0 o posterior.
+Text Domain: notos
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
 @import url("css/style.css");
 @import url("css/blocks.css");
