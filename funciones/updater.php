@@ -1,6 +1,6 @@
 <?php 
  // set_site_transient('update_themes', null);
-  function updater_master( $transient ) {
+  function geko_check_update( $transient ) {
      if ( empty( $transient->checked ) ) {
          return $transient;
      }
@@ -9,15 +9,15 @@
       //Delete '-master' from the end of slug
      $theme_uri_slug = preg_replace('/-master$/', '', $theme_slug);
      
-     $remote_version = '0.0.0';
+     $remote_version = '1.0.0';
      $style_css = wp_remote_get("https://raw.githubusercontent.com/tooomas821/".$theme_uri_slug."/master/style.css")['body'];
      if ( preg_match( '/^[ \t\/*#@]*' . preg_quote( 'Version', '/' ) . ':(.*)$/mi', $style_css, $match ) && $match[1] )
         $remote_version = _cleanup_header_comment( $match[1] );
    
     if (version_compare($theme_data->version, $remote_version, '<')) {
         $transient->response[$theme_slug] = array(
-            'theme'       => $theme_slug,
-            'new_version' => $remote_version,
+             'theme'       => $theme_slug,
+             'new_version' => $remote_version,
             'url'         => 'https://github.com/tooomas821/'.$theme_uri_slug,
             'package'     => 'https://github.com/tooomas821/'.$theme_uri_slug.'/archive/master.zip',
          );
@@ -25,4 +25,4 @@
         
      return $transient;
  }
- add_filter( 'pre_set_site_transient_update_themes', 'updater_master' );
+ add_filter( 'pre_set_site_transient_update_themes', 'geko_check_update' );
