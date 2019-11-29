@@ -28,8 +28,3 @@ Versión aun no publicada
 = v2.0.0 =
 * Liberada: 
 
-== Cambios ==
-mejor manejo de datos
-mejora en la seccion noticias
-mejora en el volumende archivos
-
