@@ -23,8 +23,3 @@ Versión inicial
 * Liberada: Nov 25, 2019
 
 https://github.com/tooomas821/Notos/blob/master/changelog.md
-
-Versión aun no publicada
-= v2.0.0 =
-* Liberada: 
-
