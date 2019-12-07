@@ -18,7 +18,7 @@ y este proyecto se adhiere a [Semantic Versioning] (http://semver.org/).
 ### Cambio Realizado
 - Se creo el un nuevo sistema de noticias
 - Se arreglo el color de fondo para mantener un enfoque en las imagenes 
-- Se creo pagina de perfil y 4040
+- Se creo pagina de perfil y pagina 404
 - Se redujo archivos functions
 - Se creo un parche para manejar de mejor forma el perfil on line
 
