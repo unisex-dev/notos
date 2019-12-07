@@ -27,7 +27,7 @@ Versión inicial
 
 https://github.com/tooomas821/Notos/blob/master/changelog.md
 
-Versión inicial
+Versión 
 = v1.2.4 =
 * Liberada: Dic 06, 2019
 
