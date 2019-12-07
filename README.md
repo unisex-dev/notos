@@ -18,8 +18,17 @@ Licencia URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Tamplate para diario online.
 
+== Cambios ==
+
+
 Versión inicial
-= v1.0.0 =
+= v1.0.1 =
 * Liberada: Nov 25, 2019
+
+https://github.com/tooomas821/Notos/blob/master/changelog.md
+
+Versión inicial
+= v1.2.4 =
+* Liberada: Dic 06, 2019
 
 https://github.com/tooomas821/Notos/blob/master/changelog.md

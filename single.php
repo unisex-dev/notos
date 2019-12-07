@@ -1,4 +1,5 @@
 <?php get_header();?>
+<section id="paginas">
 <div class="py-3" >
   <div class="my-5">  
    </div>
@@ -67,4 +68,5 @@
   </section>
 <?php wp_reset_postdata();
 endif;  ?>
+</section>
     <?php get_footer(); ?>

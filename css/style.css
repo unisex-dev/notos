@@ -2,7 +2,7 @@
 body {
   font-family: "Roboto", Arial, serif;
   font-size: 16px;
-  background: #fff;
+  background: #000000;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -363,23 +363,23 @@ header {
 .masthead {
   text-align: center;
 }
+
 .masthead hr{
   max-width: 300px;
 }
+
 .intro-text {
   padding-top: 345px;
   padding-bottom: 10px;
 }
-.masthead .intro-heading h1{
-  font-size: 4.1rem;
-  font-weight: 700;
-  line-height: 75px;
+
+#notos-slider .intro-text a{
+  color: #fff;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);
 }
-.masthead .intro-lead-in p{
-  font-size: 2.1rem;
-  font-style: italic;
-  line-height: 40px;
-  margin-bottom: 25px;
+
+#notos-slider .intro-text a:hover {
+  color: #fff !important;
 }
 
 .home:after {
@@ -403,7 +403,33 @@ header {
 }
 
 .swiper-slide {
-    height: unset;
+    height: 100vh;
+}
+
+#notos-slider .shadoweffect {
+     position:relative;
+     top:0;
+     opacity:0;
+     left:0;
+     right:0;
+     bottom:0;
+     background:-moz-linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0.1) 30%);
+     background:-webkit-linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0.1) 30%);
+     background:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0.1) 30%);
+     filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000',endColorstr='#00000000',GradientType=1);
+     -webkit-transition:all .3s ease-in-out;
+     -moz-transition:all .3s ease-in-out;
+     -ms-transition:all .3s ease-in-out;
+     -o-transition:all .3s ease-in-out;
+     transition:all .3s ease-in-out;
+     -webkit-transform:scale(1);
+     -moz-transform:scale(1);
+     -ms-transform:scale(1);
+     -o-transform:scale(1);
+     transform:scale(1);
+     zoom:1;
+     filter:alpha(opacity=100);
+     opacity:1 
 }
 
 @media (max-width: 768px) {
@@ -423,11 +449,6 @@ header {
     font-weight: 700;
     line-height: 75px;
   }
-}
-
-
-
-#dest-notos {
 }
 
 
@@ -505,7 +526,10 @@ header {
   }
 }
 
-
+/*Color paginas*/
+#paginas {
+  background-color: #fff;
+}
 
 /*Post*/
 .bg-negro{ 
@@ -520,13 +544,22 @@ header {
     min-width: 660px;
     max-height: 400px;
 }
+
+#ultimas-notas .destacado-box img {
+    min-width: 840px;
+    max-height: 900px;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
+
  .descripcion {
-     position:absolute;
-     bottom:0;
-     padding:1rem 1.5rem 
+     position: absolute;
+     bottom: 0;
+     padding: 1rem 1.5rem 
 }
 .descripcion .blog-titu small::after, .descripcion .blog-titu a, .descripcion .blog-titu h4 a {
-     color:#fff!important 
+    color: #fff !important;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);
 }
 
 .noticias-box img {
@@ -539,6 +572,14 @@ header {
     transition:all .4s linear;
 }
  .post-media:hover img {
+     -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+#ultimas-notas .destacado-box:hover img {
      -webkit-transition:all .4s linear;
     transition:all .4s linear;
     -ms-transform:scale(1.2);
@@ -577,7 +618,8 @@ header {
      padding:1rem 1.5rem 
 }
  .shadow-desc .blog-meta small::after, .shadow-desc .blog-meta a, .shadow-desc .blog-meta h4 a {
-     color:#fff!important 
+     color:#fff!important;
+	 text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);
 }
  .small-box .shadow-desc h4 {
      font-size:16px;
@@ -823,7 +865,6 @@ aside .widget {
    font-size: 13px;
    text-align: center;
    color: #fff !important;
-   border: 1px solid;
    overflow: hidden;
    transition: color .3s;
 }
@@ -882,11 +923,69 @@ aside .widget {
   width:100%;
 }
 
+/*Autor*/
+.espacio{
+  padding-top: 9%;
+}
+
+.espacio2{
+  padding-top: 3%;
+}
+.image_outer_container{
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50%;
+  position: relative;
+}
+
+.image_inner_container{
+  border-radius: 50%;
+  padding: 5px;
+  background: #000; 
+}
+.image_inner_container img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.image_outer_container .green_icon{
+  background-color: #4cd137;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  border:5px solid white;
+  border-radius: 50%;
+}
+
+.image_outer_container .red_icon{
+  background-color: #f00;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  border:5px solid white;
+  border-radius: 50%;
+}
+
+/*Arminiculos*/
+
+#arminiculos img{
+  width: 100%!important;
+}
+
+/*Footer*/
 #footer {
   width: 100%;
   float: left;
   background: #000;
   color: #fff;
+  z-index: 999;
+  position: relative;
 }
 #footer p {
   color: rgba(255, 255, 255, 0.3);
@@ -948,6 +1047,15 @@ aside .widget {
 #footer .copy-right p a {
     color: rgba(21, 20, 20, 0.94);
 }
+/*404*/
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+
 
 #notos-wrapper {
   overflow-x: hidden;

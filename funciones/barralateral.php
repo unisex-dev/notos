@@ -18,10 +18,10 @@ function textdomain_register_sidebars() {
 			'id' => 'sidebar-footer1',
 			'name' => __( 'Footer 1', 'textdomain' ),
 			'description' => __( 'A short description of the sidebar.', 'textdomain' ),
-            'before_widget' => '<aside class="widget wow fadeInUp"  data-wow-duration="1000ms">',
-            'after_widget' => '</aside>',
-            'before_title' => '<div class="widget-title"><h3>',
-            'after_title' => '</h3></div>'
+            'before_widget' => '<div class="col-md-4 p-0">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="text-light">',
+            'after_title' => '</h3>'
 		)
 	);
 
@@ -30,10 +30,10 @@ function textdomain_register_sidebars() {
 			'id' => 'sidebar-footer2',
 			'name' => __( 'Footer 2', 'textdomain' ),
 			'description' => __( 'A short description of the sidebar.', 'textdomain' ),
-            'before_widget' => '<aside class="widget wow fadeInUp"  data-wow-duration="1000ms">',
-            'after_widget' => '</aside>',
-            'before_title' => '<div class="widget-title"><h3>',
-            'after_title' => '</h3></div>'
+            'before_widget' => '<div class="col-md-4 p-0">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="text-light">',
+            'after_title' => '</h3>'
 		)
 	);
 
@@ -42,10 +42,10 @@ function textdomain_register_sidebars() {
 			'id' => 'sidebar-footer3',
 			'name' => __( 'Footer 3', 'textdomain' ),
 			'description' => __( 'A short description of the sidebar.', 'textdomain' ),
-            'before_widget' => '<aside class="widget wow fadeInUp"  data-wow-duration="1000ms">',
-            'after_widget' => '</aside>',
-            'before_title' => '<div class="widget-title"><h3>',
-            'after_title' => '</h3></div>'
+            'before_widget' => '<div class="col-md-4 p-0">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="text-light">',
+            'after_title' => '</h3>'
 		)
 	);
 
@@ -53,10 +53,10 @@ function textdomain_register_sidebars() {
             array(
             'id' => 'shop',
             'name' => __( 'woocommerce', 'textdomain' ),
-            'before_widget' => '<aside class="widget wow fadeInUp"  data-wow-duration="1000ms">',
-            'after_widget' => '</aside>',
-            'before_title' => '<div class="widget-title"><h3>',
-            'after_title' => '</h3></div>'
+            'before_widget' => '<div>',
+            'after_widget' => '</div>',
+            'before_title' => '<h4>',
+            'after_title' => '</h4>'
         )
     );
 

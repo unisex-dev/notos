@@ -5,14 +5,6 @@ get_header();?>
 <?php endwhile; // end of the loop. ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'secciones/cubos', 'page' ); ?>
-<?php endwhile; // end of the loop. ?>
-
-<?php while ( have_posts() ) : the_post(); ?>
-<?php get_template_part( 'secciones/eventos', 'page' ); ?>
-<?php endwhile; // end of the loop. ?>
-
-<?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'secciones/ultimas-notas', 'page' ); ?>
 <?php endwhile; // end of the loop. ?>
 

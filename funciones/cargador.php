@@ -4,12 +4,14 @@ function estilo_del_sitio() {
  
 	//Registrando estilos
 	wp_register_style('bootstrap', get_template_directory_uri() . '/vendor/bootstrap/css/bootstrap.min.css');
+    wp_register_style('blocks', get_template_directory_uri() . '/css/blocks.css'); 
     wp_register_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.4/css/all.css');
     wp_register_style('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css');
     wp_register_style('swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css');      
 	wp_register_style('theme-style', get_stylesheet_uri(), '', '1.0', 'all');
 	//Cargando estilos
     wp_enqueue_style( 'bootstrap' );
+    wp_enqueue_style( 'blocks' );    
     wp_enqueue_style( 'font-awesome' );
     wp_enqueue_style( 'lightbox' );
     wp_enqueue_style( 'swiper' );    
