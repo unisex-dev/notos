@@ -12,7 +12,7 @@
                         <a href="<?php get_category_link( $category_id ); ?>">Noticias</a>
                     </span>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                  <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small></div>
+                  <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small></div>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
                             <a href="<?php get_category_link( $category_id ); ?>">Artículos</a>
                         </span>
                       <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small></div>
+                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small></div>
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@
                             <a href="<?php get_category_link( $category_id ); ?>">Videos</a>
                         </span>
                       <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small>
+                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small>
                    </div>
                   </div>
                 </div>
@@ -73,7 +73,7 @@
                             <a href="<?php get_category_link( $category_id ); ?>">Columnas</a>
                         </span>
                       <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small></div>
+                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small></div>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@
                             <a href="<?php get_category_link( $category_id ); ?>">Editorial</a>
                         </span>
                       <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small></div>
+                      <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small></div>
                   </div>
                 </div>
               </div>

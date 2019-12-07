@@ -1,4 +1,4 @@
-<?php  /* Template Name: Pagina para categorias */
+<?php  
 get_header();?>
 <?php $args = array('post_type' => 'post', 'posts_per_page' => 1,'order' => 'DESC','articulos' => 'texto' );$loop = new WP_Query( $args );while ( $loop->have_posts() ) : $loop->the_post(); ?>
  <header class="py-5 bg-image-full pictera" style="background-image: url('<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url(); } else { ?><?php bloginfo('template_directory'); ?>/screenshot.png" alt="<?php the_title(); ?> <?php } ?>');background-position:center center;background-size:cover;background-repeat:no-repeat;"></header>
@@ -21,7 +21,7 @@ get_header();?>
                         <a href="<?php get_category_link( $category_id ); ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
                     </span>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                  <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small></div>
+                  <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small></div>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ get_header();?>
                         <a href="<?php get_category_link( $category_id ); ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
                     </span>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-                  <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="pages/blog-author.php"> by <?php the_author(); ?></a></small>
+                  <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small>
                 </div>
               </div>
             </div>
