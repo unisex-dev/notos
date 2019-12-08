@@ -1,6 +1,6 @@
 === Notos ===
 #
-Contribuyentes: Darknadie, Nikko Man
+Contribuyentes: Darknadie, Nikko Mansilla.
 #
 Tags: noticias, blog, barra lateral derecha, encabezado personalizado, colores personalizados, logotipo personalizado, widgets, menú personalizado, imágenes destacadas, estilo editor, microformatos, publicación fija, cabecera flexible
 
