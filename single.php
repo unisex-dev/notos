@@ -1,30 +1,32 @@
 <?php get_header();?>
 <section id="paginas">
-<div class="py-3" >
-  <div class="my-5">  
-   </div>
+<div class="espacio"></div>
+<div class="card-header bg-blanco">
+  <div class="small"><?php get_breadcrumb(); ?></div>
 </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <br>
-           <br>    
-          <div class="small"><?php get_breadcrumb(); ?></div>
-         </div>
-      </div>
-    </div>
 
 <section id="single-post">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-9">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <article class="blog-post">
             <div class="post-heading">
-              <h3><?php the_title(); ?></h3>
             </div>
             <div class="clearfix"></div>
-           <img class="img-fluid d-block w-100" src="<?php the_post_thumbnail_url(); ?>" alt="website template image">
+         <div class="single-box post-media">
+          <img class="img-fluid" src="<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url(); } else { ?><?php bloginfo('template_directory'); ?>/screenshot.png" alt="<?php the_title(); ?> <?php } ?>">
+            <div class="shadoweffect">
+              <div class="descripcion">
+                <div class="blog-titu">
+                    <span class="bg-green">
+                        <a href="<?php get_category_link( $category_id ); ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
+                    </span>
+                  <h4><a><?php the_title(); ?></a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
             <ul class="post-meta">
               <li class="first">
                 <i class="fas fa-calendar"></i>
@@ -56,7 +58,7 @@
          <?php endwhile; ?>
         <?php comments_template(); ?>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3 p-0">
           <aside>
             <div class="widget">
               <?php dynamic_sidebar( 'unique-sidebar-id' );   ?>

@@ -16,6 +16,7 @@ require_once( get_template_directory() . '/funciones/cargador.php' );// Carga de
 require_once( get_template_directory() . '/funciones/compresor.php' );// Comprime estilo y Javascript
 require_once( get_template_directory() . '/funciones/walker.php' );// Menu del Sitio en Bootstrap
 require_once( get_template_directory() . '/funciones/miselaneo.php' );// Elementos que sirven para diferentes funciones generales
+require_once( get_template_directory() . '/funciones/categorias-funk.php' );// Link Categorias
 
 // Funciones de post
 require_once( get_template_directory() . '/funciones/extracto.php' );// Personalizacion de comentarios

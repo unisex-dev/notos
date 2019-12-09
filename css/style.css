@@ -531,10 +531,23 @@ header {
   background-color: #fff;
 }
 
+
 /*Post*/
 .bg-negro{ 
     background:  #000;
 }
+.bg-blanco {
+    background-color: 
+    #fff !important;
+}
+
+.card-cabeza {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: unset;
+    border-bottom: unset;
+}
+
  .post-media {
      position:relative;
      overflow:hidden;
@@ -704,18 +717,14 @@ header {
     padding-top: 15px;
 }
 
-#single-post article.blog-post img {
+#single-post article {
     margin-bottom: 20px;
 }
 
-#single-post ul.post-meta {
-    float: left;
+#single-post .single-box img {
     width: 100%;
-    list-style: none;
-    padding: 0 0 5px 0;
-    border-bottom: 1px dotted #e6e6e6;
-    margin: 0 0 15px 0;
 }
+
 
 #single-post ul.post-meta {
  float:left;

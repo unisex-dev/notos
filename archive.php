@@ -18,7 +18,7 @@ get_header();?>
               <div class="descripcion">
                 <div class="blog-titu">
                     <span class="bg-green">
-                        <a href="<?php get_category_link( $category_id ); ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
+                        <a href="<?php get_site_url(); ?>category/<?php $category = get_the_category(); echo $category[0]->slug; ?>" title="<?php $category = get_the_category(); echo $category[0]->cat_name; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
                     </span>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                   <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small></div>
@@ -45,7 +45,7 @@ get_header();?>
               <div class="shadow-desc">
                 <div class="blog-meta">
                     <span class="bg-green">
-                        <a href="<?php get_category_link( $category_id ); ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
+                        <a href="<?php get_site_url(); ?>category/<?php $category = get_the_category(); echo $category[0]->slug; ?>" title="<?php $category = get_the_category(); echo $category[0]->cat_name; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></a>
                     </span>
                   <h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
                   <small><a href="<?php echo get_permalink(); ?>"><?php echo get_the_date('F'); ?> <?php echo get_the_date('j'); ?>, <?php echo get_the_date('Y'); ?> </a></small><small><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">por <?php the_author(); ?></a></small>
