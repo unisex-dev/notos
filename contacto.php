@@ -12,17 +12,20 @@ get_header();?>
         <div class="col-md-4 text-left p-4 text-light">
           <h1 class="text-light">Contactanos</h1>
           <p>
-            <abbr title="Phone"><i class="fas fa-map"></i></abbr> : <?php echo get_option( 'direccion' ); ?>
+            <abbr title="Mapa"><i class="fas fa-map"></i></abbr> : 
+            <?php echo get_option( 'direccion' ); ?>
           </p>
           <p>
-            <abbr title="Phone"><i class="fas fa-phone"></i></abbr> : <?php echo get_option( 'telefono' ); ?>
+            <abbr title="Telefono"><i class="fas fa-phone"></i></abbr> : 
+            <?php echo get_option( 'telefono' ); ?>
           </p>
           <p>
             <abbr title="Email"><i class="far fa-envelope"></i></abbr> :
             <a class="correo" href="mailto:<?php echo get_option( 'email' ); ?>"><?php echo get_option( 'email' ); ?></a>
           </p>
           <p>
-            <abbr title="Hours"><i class="far fa-clock"></i></abbr> : <?php echo get_option( 'horario' ); ?>
+            <abbr title="Horarios"><i class="far fa-clock"></i></abbr> : 
+            <?php echo get_option( 'horario' ); ?>
           </p>
         </div>
 
