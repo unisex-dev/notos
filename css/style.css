@@ -910,7 +910,7 @@ aside .widget {
   margin-bottom:45px;
 }
 
-#contact-form input {
+#contact-form input, select {
   border-color: #cfd2d8;
   border-radius: 0;
   box-shadow: none;
@@ -919,13 +919,15 @@ aside .widget {
   padding:6px 18px;
 }
 
-#contact-form textarea {
+#contact-form .form-control {
   resize:none;
   box-shadow:none;
   border-radius:0;
   margin-top:-10px;
   padding:12px 18px;
   margin-bottom:20px;
+  -moz-appearance:none;
+  -webkit-appearance: none;
 }
 
 #contact-form .btn-primary {
