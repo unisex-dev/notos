@@ -1,7 +1,7 @@
   <?php  /* Template Name: Contacto */ 
 get_header();?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
  <header class="py-5 bg-image-full pictera" style="background-image: url(&quot;https://pingendo.github.io/templates/sections/assets/form_red.jpg&quot;);"></header>
 
@@ -28,6 +28,7 @@ get_header();?>
             <?php echo get_option( 'horario' ); ?>
           </p>
         </div>
+<?php endwhile; ?>
 
         <div class="p-0 col-md-8">
           <div class="card bg-dark rounded-0">
@@ -42,9 +43,5 @@ get_header();?>
   </div>
 
 
-<?php endwhile; ?>
-
-
-<?php wp_reset_postdata(); endif;  ?>   
 
 <?php get_footer(); ?>

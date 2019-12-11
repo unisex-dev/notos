@@ -68,7 +68,7 @@ if ( riverlab_is_user_online($id) ) {
 
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                      
-                     
+                     <?php include (TEMPLATEPATH . '/formularios/form-usuarios.php'); ?>
 
                     </div>
 
