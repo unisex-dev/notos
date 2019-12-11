@@ -32,9 +32,7 @@
 
   <?php if ( have_comments() ) : ?>
 
-    <h2>
-      <?php comments_number(); ?>
-    </h2>
+    <h2><?php comments_number(); ?></h2>
   
     <ul class="media-list">
       <?php wp_list_comments( array( 'callback' => 'bootstrap_comment' ) ); ?>
