@@ -12,6 +12,14 @@ $(document).ready(function(){
         $( ".img-logo" ).removeClass("imaglo");
     }
 });
+          $("html").niceScroll({
+        cursorwidth: "0.3rem",
+        cursorfixedheight: 20,
+        cursorcolor: "#E58D2A",
+        cursorborder: "0px",
+        autohidemode: !1,
+        zindex: 9999
+    });   
   });
 
 var swiper = new Swiper('.s2', {
@@ -33,16 +41,19 @@ var swiper = new Swiper('.s2', {
     });
 
 var swiper = new Swiper('.s1',{
-  slidesPerView: 1,
-  effect: 'fade',
-  autoplay: {
-  delay: 5000,
-  disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-   },
-  });
+    slidesPerView: 1,
+      spaceBetween: 0,
+      effect: 'fade',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });     
 
 (function scrollReveal() {
   window.sr = ScrollReveal();
