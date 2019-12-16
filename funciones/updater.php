@@ -10,7 +10,7 @@
      $theme_uri_slug = preg_replace('/-master$/', '', $theme_slug);
      
      $remote_version = '1.0.0';
-     $style_css = wp_remote_get("https://raw.githubusercontent.com/tooomas821/".$theme_uri_slug."/master/style.css")['body'];
+     $style_css = wp_remote_get("https://raw.githubusercontent.com/unisex-dev/".$theme_uri_slug."/master/style.css")['body'];
      if ( preg_match( '/^[ \t\/*#@]*' . preg_quote( 'Version', '/' ) . ':(.*)$/mi', $style_css, $match ) && $match[1] )
         $remote_version = _cleanup_header_comment( $match[1] );
    
@@ -18,8 +18,8 @@
         $transient->response[$theme_slug] = array(
              'theme'       => $theme_slug,
              'new_version' => $remote_version,
-            'url'         => 'https://github.com/tooomas821/'.$theme_uri_slug,
-            'package'     => 'https://github.com/tooomas821/'.$theme_uri_slug.'/archive/master.zip',
+            'url'         => 'https://github.com/unisex-dev/'.$theme_uri_slug,
+            'package'     => 'https://github.com/unisex-dev/'.$theme_uri_slug.'/archive/master.zip',
          );
      }
         
