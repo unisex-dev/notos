@@ -89,36 +89,3 @@ sr.reveal(".blog-meta", {
   duration: 1200
 });
 })();
-
-
-
-  delay: 5000,
-  disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-   },
-  });
-
-(function scrollReveal() {
-  window.sr = ScrollReveal();
-  
-window.sr = ScrollReveal({
-  reset: false,
-  viewFactor: 0.4,
-  easing: "cubic-bezier(0.560, 0.005, 0.225, 1.150)"
-});
-
-sr.reveal(".post-media", {
-  origin: "bottom",
-  distance: "10rem",
-  duration: 900
-});
-sr.reveal(".blog-meta", {
-  origin: "bottom",
-  distance: "0rem",
-  duration: 1200
-});
-})();
-
-
