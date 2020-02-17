@@ -12,7 +12,30 @@ $(document).ready(function(){
         $( ".img-logo" ).removeClass("imaglo");
     }
 });
+          $("html").niceScroll({
+        cursorwidth: "0.3rem",
+        cursorfixedheight: 20,
+        cursorcolor: "#E58D2A",
+        cursorborder: "0px",
+        autohidemode: !1,
+        zindex: 9999
+    });   
   });
+
+var swiper = new Swiper('.s1',{
+    slidesPerView: 1,
+      spaceBetween: 0,
+      effect: 'fade',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    }); 
 
 var swiper = new Swiper('.s2', {
       effect: 'cube',
@@ -30,12 +53,45 @@ var swiper = new Swiper('.s2', {
       pagination: {
         el: '.swiper-pagination',
       },
-    });
+    });       
 
-var swiper = new Swiper('.s1',{
-  slidesPerView: 1,
-  effect: 'fade',
-  autoplay: {
+var swiper = new Swiper('.s3',{
+    slidesPerView: 3,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });      
+
+(function scrollReveal() {
+  window.sr = ScrollReveal();
+  
+window.sr = ScrollReveal({
+  reset: false,
+  viewFactor: 0.4,
+  easing: "cubic-bezier(0.560, 0.005, 0.225, 1.150)"
+});
+
+sr.reveal(".post-media", {
+  origin: "bottom",
+  distance: "10rem",
+  duration: 900
+});
+sr.reveal(".blog-meta", {
+  origin: "bottom",
+  distance: "0rem",
+  duration: 1200
+});
+})();
+
+
+
   delay: 5000,
   disableOnInteraction: false,
   },
