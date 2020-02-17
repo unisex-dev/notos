@@ -1,6 +1,16 @@
-<?php ?>
+<?php
+/**
+* El encabezado del tema.
+* Muestra toda la sección <header>
+* @package WordPress
+* @subpackage Unisex
+**/
+?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> >
+<!--[if IE 7]><html class="ie ie7" <?php language_attributes(); ?>><![endif]-->
+<!--[if IE 8]><html class="ie ie8" <?php language_attributes(); ?>><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html <?php language_attributes(); ?>>
 
   <head>
 
@@ -8,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-  <title><?php bloginfo( 'name' ); ?> <?php wp_title('', true,''); ?></title>
+  <title><?php bloginfo( 'name' ); ?> | <?php wp_title('', true,''); ?></title>
  <?php wp_head(); ?>
 
   </head>

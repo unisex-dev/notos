@@ -40,6 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 figure {
   margin-bottom: 2em;
 }
+.widget ul{
+  list-style: none;
+  margin-top: 5px;
+  padding: unset;
+}
+
+.widget li{
+  margin-top: 5px;
+}
+
 
 .wp-block-quote {
   background: #f9f9f9;
@@ -405,7 +415,9 @@ header {
 .swiper-slide {
     height: 100vh;
 }
-
+#single-post .swiper-slide {
+    height: 100%;
+}
 #notos-slider .shadoweffect {
      position:relative;
      top:0;
@@ -552,7 +564,10 @@ header {
      position:relative;
      overflow:hidden;
 }
-
+ .post-media2 {
+     position:relative;
+     overflow:hidden;
+}
 .destacado-box img {
     min-width: 660px;
     max-height: 400px;
@@ -633,6 +648,10 @@ header {
  .shadow-desc .blog-meta small::after, .shadow-desc .blog-meta a, .shadow-desc .blog-meta h4 a {
      color:#fff!important;
 	 text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);
+}
+ .shadow-desc .blog-meta2 small::after, .shadow-desc .blog-meta2 a, .shadow-desc .blog-meta2 h4 a {
+     color:#fff!important;
+   text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);
 }
  .small-box .shadow-desc h4 {
      font-size:16px;
