@@ -108,29 +108,3 @@ wp_reset_postdata(); ?>
 endif;  ?>
 </section>
     <?php get_footer(); ?>
-
-                 <span>
-                  <?php $post_tags = get_the_tags(); if ( $post_tags ) { foreach( $post_tags as $tag ) { echo ' <a href="'; echo '/?tag=' . $tag->slug . '" class="text-dark">' . $tag->name . '</a>,'; } } ?>
-                </span>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
-            <?php $phrase = get_the_content(); $phrase = apply_filters('the_content', $phrase); $replace = '<p>'; echo str_replace('</p>', $replace, $phrase); ?>
-          </article>
-         <?php endwhile; ?>
-        <?php comments_template(); ?>
-        </div>
-        <div class="col-lg-3 p-0">
-          <aside>
-            <div class="widget">
-              <?php dynamic_sidebar( 'unique-sidebar-id' );   ?>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </div>
-  </section>
-<?php wp_reset_postdata();
-endif;  ?>
-</section>
-    <?php get_footer(); ?>
