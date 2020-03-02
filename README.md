@@ -1,5 +1,4 @@
 === Notos ===
-demo:https://unisex.cl/demos/notos/
 #
 Contribuyentes: Tooomas821, Darknadie, Skaparate.
 #
